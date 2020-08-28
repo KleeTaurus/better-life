@@ -3,7 +3,7 @@ from rich.table import Table
 from utils import format_currency
 
 
-def calculate(total_deposit=10000000, years=20, inflation_ratio=0.05):
+def calculate(total_deposit=6000000, years=20, inflation_ratio=0.05):
     deposit = total_deposit
 
     table = Table(show_header=True, header_style='bold')

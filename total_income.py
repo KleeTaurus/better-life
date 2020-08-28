@@ -3,7 +3,7 @@ from rich.table import Table
 from utils import format_currency
 
 
-def annual_growth_rate(working_years, tier_key=1):
+def annual_growth_rate(working_years, tier_key=2):
     growth_tier = {
         0: [1.5, 1.3,  1.2,  1.1],
         1: [1.3, 1.2,  1.1,  1.05],
@@ -35,7 +35,7 @@ def generate_table():
 
 def calculate(working_age=22,
               retirement_age=51,
-              monthly_salary=5000,
+              monthly_salary=8000,
               bonus=2,
               deposit_ratio=0.4):
     total_income = 0
